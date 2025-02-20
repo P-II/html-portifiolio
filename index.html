@@ -1,35 +1,149 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1> Pedro Yu's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr>
- <h3><a href="public/movie-ranking.html">Movie Ranking Project</a></h3>
- <img src="goal.png" height="200" width="180" alt="teu">
- <h3><a href="public/birthday-invite.html">Birthday Invite Project</a></h3>
- <img src="goal.png" height="200" width="200" alt="">
-<hr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
- <a href="public/about.html"> About me </a>
- <a href="public/contact.html"> Contact Me</a>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 6px;
+        margin-bottom: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .botao-img {
+        margin-top: 20px;
+        background-color: darkgreen;
+        color: white;
+        border: none;
+        padding: 12px 70px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .botao-img img {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+      }
+      .botao-img:hover {
+        background-color: aqua;
+      }
+      #preco1 {
+        color: green;
+        font-size: 3rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .precos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .preco-desconto {
+        text-decoration: line-through;
+        color: gray;
+        font-size: 1rem;
+      }
+      .preco-original {
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        border-radius: 0;
+      }
+.imagem img {max-widht: 350px;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  width: 100%;
+}
+      #conteudo {
+        color: grey;
+      }
+      body {
+        background-color: #f5f5dc;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        border-radius: inherit;
+        margin: 0;
+      }
+      .conteudo {
+        background-color: white;
+        border-radius: 10px;
+        flex: 1;
+        padding: 20px;
+        margin-left: 20px;
+      }
+      .dureza {
+     
+display: block;
+        width: 50%;
+        height: 100%;
+     
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imagem">
+        <img class="dureza" src="images/image-product-desktop.jpg" alt="" />
+      </div>
+      <div class="conteudo">
+        <p>Perfume</p>
+
+        <h1>
+          Gabrielle <br />
+          Essence Eau <br />De Parfu
+        </h1>
+        <p id="conteudo">
+          A floral, solar and voluptuous <br />
+          interpretation composed by <br />
+          Olivier Polge, Perfumer-Creator <br />
+          for the House of CHANEL.
+        </p>
+
+        <span class="preco-original">$ 149.99</span>
+        <span class="preco-desconto">$ 169.99</span>
+
+        <button class="botao-img">
+          <img src="images/icon-cart.svg" alt="carrinho do botão" />
+          Add to Cart
+        </button>
+
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
